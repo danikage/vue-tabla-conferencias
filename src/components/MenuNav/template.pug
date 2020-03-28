@@ -1,0 +1,8 @@
+nav.menu-nav(:class="[{'menu-nav--active': showMenu}]")
+	.menu-nav__overlay(@click="hideMenu")
+		.menu-nav__content
+			ul.menu-nav__list
+				li.menu-nav__list-item
+					router-link.menu-nav__link(to="/") Home
+				li.menu-nav__list-item
+					router-link.menu-nav__link(to="/about") About
