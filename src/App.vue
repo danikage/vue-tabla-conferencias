@@ -20,17 +20,17 @@
 				{
 					url: '/',
 					text: 'Test',
-					icon: ''
+					icon: 'games'
 				},
 				{
 					url: '/home',
 					text: 'Home',
-					icon: ''
+					icon: 'home'
 				},
 				{
 					url: '/about',
 					text: 'About',
-					icon: ''
+					icon: 'info'
 				},
 			],
 		}),
