@@ -1,0 +1,8 @@
+.tabla-componentes
+	table.tabla-componentes__table
+		tr.tabla-componentes__row
+			th.tabla-componentes__head(v-for="head in header") {{ head }}
+		tr.tabla-componentes__row(v-for="cell in date")
+			td.tabla-componentes__cell(v-for="item in cell") {{ item }}
+			td.tabla-componentes__cell(v-for="item in cell") {{ item }}
+			td.tabla-componentes__cell(v-for="item in cell") {{ item }}	
