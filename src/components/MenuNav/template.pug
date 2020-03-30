@@ -3,4 +3,7 @@ nav.menu-nav(:class="[{'menu-nav--active': showMenu}]")
 		.menu-nav__content
 			ul.menu-nav__list
 				li.menu-nav__list-item(v-for="(link,index) in links"  :key="index")
-					router-link.menu-nav__link(:to="link.url") {{ link.text }}
+					router-link.menu-nav__link(:to="link.url")
+						span.menu-nav__icon 
+							i.material-icons {{ link.icon }}
+						span.menu-nav__text {{ link.text }}
