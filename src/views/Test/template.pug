@@ -1,3 +1,19 @@
 .v-test
 	h1 Testeo de componentes
-	HelloWorld(msg="Borrar este componente de esta vista")
+	section
+		article
+			p
+				b Librería de iconos
+			p Se ha incluido la librería de iconos de material. Está incluida como CDN, lo que quiere decir que sin internet no se visualizan los iconos.
+			p Para poder ver un listado de iconos, mirar en esta 
+				a(href="https://material.io/resources/icons/?style=baseline" target="_blank") web
+				|  (a la izquierda hay un filtro para buscar por nombre)
+			p Y aquí abajo un listado de ejemplo de uso de los iconos:
+			div
+				i.material-icons face
+				i.material-icons timer
+				i.material-icons tag_faces
+				i.material-icons(style="font-size: 1rem") casino
+				i.material-icons(style="font-size: 2rem") local_bar
+				i.material-icons(style="color:orange") wc
+			p queda pendiente cambiar esto para convertirlo en un componente
