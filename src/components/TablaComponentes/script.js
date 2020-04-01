@@ -1,15 +1,17 @@
 export default {
 	name: 'TablaComponentes',
 	props: {
-		title: {
-			type: String,
-			default: 'Holaaa'
-		},
 		header: {
-			type: Array
+			type: Array,
+			default: function(){
+				return []
+			}
 		},
-		date: {
-			type: Array
+		data: {
+			type: Array,
+			default: function(){
+				return []
+			}
 		}
 	},
 	computed: {
