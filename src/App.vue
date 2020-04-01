@@ -1,6 +1,6 @@
 <template lang="pug">
 	#app
-		MenuNav
+		MenuNav(:links="links")
 		main
 			button(@click="clickMenu") menu
 			router-view
@@ -16,6 +16,23 @@
 		},
 		data: () => ({
 			showMenu: false,
+			links: [
+				{
+					url: '/',
+					text: 'Test',
+					icon: 'games'
+				},
+				{
+					url: '/home',
+					text: 'Home',
+					icon: 'home'
+				},
+				{
+					url: '/about',
+					text: 'About',
+					icon: 'info'
+				},
+			],
 		}),
 		methods: {
 			clickMenu(){
