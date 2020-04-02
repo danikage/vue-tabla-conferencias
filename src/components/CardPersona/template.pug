@@ -1,0 +1,16 @@
+div.card-persona
+	.card-persona__index
+		.card-persona__img-wrapper
+			img.card-persona__img(:src="img")
+		.card-persona__text
+			p.card-persona__name {{ name }}
+			p.card-persona__description {{ description }}
+		.card-persona__rrss
+			a(:href="['rrss.url']") 
+				img.card-persona__rrss-fb(:src="facebook")
+			a(href="#")
+				img.card-persona__rrss-twitter(:src="twitter")
+			a(href="#")
+				img.card-persona__rrss-in(:src="linkedin")
+
+
