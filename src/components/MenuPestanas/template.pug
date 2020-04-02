@@ -1,24 +1,16 @@
 div.menu-pestanas
 	nav.menu-pestanas__index
 		ul.menu-pestanas__list
-			li.menu-pestanas__item(@click="funcionconnombrefeo(1)")
+			li.menu-pestanas__item(@click="changeText(1)")
 				span.menu-pestanas__title item1
-			li.menu-pestanas__item(@click="funcionconnombrefeo(2)")
+			li.menu-pestanas__item(@click="changeText(2)")
 				span.menu-pestanas__title item2
-			li.menu-pestanas__item(@click="funcionconnombrefeo(3)")
+			li.menu-pestanas__item(@click="changeText(3)")
 				span.menu-pestanas__title item3
-	div
-		.menu-pestanas__nombre-feo(:class="nombrefeoclaseactiva1")
+	div.menu-pestanas__slots
+		.menu-pestanas__slots-block(:class="blockActive1")
 			slot(name='tabcontent1')
-		.menu-pestanas__nombre-feo(:class="nombrefeoclaseactiva2")
+		.menu-pestanas__slots-block(:class="blockActive2")
 			slot(name='tabcontent2')
-		.menu-pestanas__nombre-feo(:class="nombrefeoclaseactiva3")
+		.menu-pestanas__slots-block(:class="blockActive3")
 			slot(name='tabcontent3')
-//- nav.menu-pestanas
-//- 	.menu-pestanas__item
-//- 		h1.menu-pestanas__title item1
-//- 	.menu-pestanas__item
-//- 		h1.menu-pestanas__title item2
-//- 	.menu-pestanas__item
-//- 		h1.menu-pestanas__title item3
-//- 	p.menu-pestanas__text(slot-scope="valor") {{ valor.nombre }}

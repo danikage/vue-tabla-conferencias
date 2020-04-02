@@ -1,6 +1,5 @@
 export default {
 	name: 'MenuPestanas',
-	// template: '<slot v-for="dia in dias" :nombre="dia">{{ dia }}</slot>',
 	props: {
 		item:{
 			type: Array
@@ -9,29 +8,28 @@ export default {
 	},
 	data() {
 		return {
-			nombrefeoclaseactiva1: '',
-			nombrefeoclaseactiva2: '',
-			nombrefeoclaseactiva3: '',
-			dia: ['lunes', 'martes']
+			blockActive1: '',
+			blockActive2: '',
+			blockActive3: ''
 		}
 	},
 	computed: {
 	},
 	methods: {
-		funcionconnombrefeo(tabClicked){
+		changeText(tabClicked){
 			console.log('fe')
 			// para no pensar, primero reseteo las clases
-			this.nombrefeoclaseactiva1 = '';
-			this.nombrefeoclaseactiva2 = '';
-			this.nombrefeoclaseactiva3 = '';
+			this.blockActive1 = '';
+			this.blockActive2 = '';
+			this.blockActive3 = '';
 
 			// y activo la que debería:
 			if(tabClicked == 1){
-				this.nombrefeoclaseactiva1 = 'menu-pestanas__nombre-feo--active';
+				this.blockActive1 = 'menu-pestanas__slots-block--active';
 			} else if(tabClicked == 2){
-				this.nombrefeoclaseactiva2 = 'menu-pestanas__nombre-feo--active';
+				this.blockActive2 = 'menu-pestanas__slots-block--active';
 			} else {
-				this.nombrefeoclaseactiva3 = 'menu-pestanas__nombre-feo--active';
+				this.blockActive3 = 'menu-pestanas__slots-block--active';
 			}
 		}
 	}
