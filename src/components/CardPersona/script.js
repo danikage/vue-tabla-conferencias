@@ -27,6 +27,12 @@ export default {
 		},
 		rrss: {
 			type: Object
+		},
+		nombrefeo: {
+			type: Array,
+			default: function(){
+				return []
+			}
 		}
 	},
 	data() {
