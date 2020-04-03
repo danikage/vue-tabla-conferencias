@@ -11,25 +11,24 @@ export default {
 	},
 	data: () => ({
 		sampleCardPersona:{
-			// img: '',		//Por hacer
-			// name: '',
-			// description
-			// rrss
-			nombrefeo: [
+			img: 'https://image.flaticon.com/icons/svg/2741/2741163.svg',
+			name: 'Mariola',
+			description: 'Enfermera luchando actualmente contra el Covid-19',
+			rrss: [
 				{
 					name: 'Facebook',
 					img: 'https://image.flaticon.com/icons/svg/733/733547.svg',
-					url: 'https://github.com/webpack/webpack/issues/7126',
+					url: 'https://es-es.facebook.com/',
 				},
 				{
 					name: 'Twitter',
 					img: 'https://image.flaticon.com/icons/svg/1409/1409937.svg',
-					url: 'https://www.google.es/',
+					url: 'https://twitter.com/',
 				},
 				{
 					name: 'Linkedin',
 					img: 'https://image.flaticon.com/icons/svg/174/174857.svg',
-					url: '#',
+					url: 'https://www.linkedin.com/',
 				},
 			]
 		}

@@ -6,19 +6,5 @@ div.card-persona
 			p.card-persona__name {{ name }}
 			p.card-persona__description {{ description }}
 		.card-persona__rrss
-			//- a(:href="['rrss.url']") 
-				img.card-persona__rrss-fb(:src="facebook")
-			a(href="#")
-				img.card-persona__rrss-twitter(:src="twitter")
-			a(href="#")
-				img.card-persona__rrss-in(:src="linkedin")
-		.card-persona__rrss
-			a(v-for="(item, i) in nombrefeo"  :key="'nombrefeo'+i"  :href="item.url")
-				img.card-persona__rrss-item(:src="item.img" title="item.name")
-
-			//- elemento(v-for="(item, i) in nombrefeo"  :key="'nombrefeo'+i")
-			//- En vue, se recomieda siempre usar una estructura simalar a esta con los bucles for
-			//- La idea es que si no tiene key, a veces dará error (no me meto a explicarte qué tipo de error)
-			//- Se puede utilizar tanto con Arrays como Objects, simplemente pinta a ver qué te sale (si dudas)
-
-
+			a(v-for="(item, i) in rrss"  :key="'rrss'+i"  :href="item.url" target="_blank")
+				img.card-persona__rrss-item(:src="item.img"  :title="item.name")

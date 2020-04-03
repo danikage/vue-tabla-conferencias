@@ -13,22 +13,7 @@ export default {
 			type: String,
 			default: 'Lorem Ipsum'
 		},
-		facebook:{
-			type: String,
-			default: 'https://image.flaticon.com/icons/svg/733/733547.svg'
-		},
-		twitter:{
-			type: String,
-			default: 'https://image.flaticon.com/icons/svg/1409/1409937.svg'
-		},
-		linkedin:{
-			type: String,
-			default: 'https://image.flaticon.com/icons/svg/174/174857.svg'
-		},
 		rrss: {
-			type: Object
-		},
-		nombrefeo: {
 			type: Array,
 			default: function(){
 				return []
