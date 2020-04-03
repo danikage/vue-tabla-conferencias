@@ -2,15 +2,18 @@ export default {
 	name: 'MenuPestanas',
 	props: {
 		item:{
-			type: Array
-		}
+			type: Array,
+			defualt: function(){
+				return []
+			}
+		},
 	},
 	data() {
 		return {
 			blockActive1: 'menu-pestanas__slots-block--active',
 			blockActive2: '',
 			blockActive3: '',
-			itemActive1: '',
+			itemActive1: 'menu-pestanas__item--active',
 			itemActive2: '',
 			itemActive3: ''
 		}
