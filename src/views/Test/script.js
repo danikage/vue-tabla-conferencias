@@ -1,11 +1,14 @@
-import HelloWorld from '@/components/HelloWorld.vue'
+
 import TablaComponentes from '@/components/TablaComponentes/index.vue'
+import MenuPestanas from '@/components/MenuPestanas/index.vue'
+import MiniCard from '@/components/MiniCard/index.vue'
 
 export default {
 	name: 'Test',
-	components: { 
-		HelloWorld,
+	components: {
 		TablaComponentes,
+		MenuPestanas,
+		MiniCard
 	},
 	data: () => ({
 		sampleTablaComponentes:{
@@ -16,6 +19,12 @@ export default {
 				[4,4,4],
 				[5,8,7]
 			]
-		}
+		},
+		sampleMenuPestanas:{
+			item: ['item1','item2','item3']
+		},
+		sampleMiniCard:{
+			name: 'Pepito',
+    },
 	}),
 }

@@ -18,3 +18,11 @@
 				i.material-icons(style="font-size: 2rem") local_bar
 				i.material-icons(style="color:orange") wc
 			p queda pendiente cambiar esto para convertirlo en un componente
+	MenuPestanas(:item="sampleMenuPestanas.item")
+		template(slot='tabcontent1')
+			p texto prueba item 1
+		template(slot='tabcontent2')
+			p texto prueba item 2
+		template(slot='tabcontent3')
+			p texto prueba item 3
+	MiniCard(:name="sampleMiniCard.name")
