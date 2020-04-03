@@ -6,5 +6,13 @@ export default {
 	components: {
 		MenuPestanas,
 		MiniCard
-	}
+	},
+	data: () => ({
+		sampleMenuPestanas:{
+			item: ['item1','item2','item3']
+		},
+		sampleMiniCard:{
+			name: 'Pepito'
+		}
+	}),
 }

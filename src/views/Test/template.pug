@@ -1,10 +1,10 @@
 .v-test
 	h1 Testeo de componentes
-	MenuPestanas
+	MenuPestanas(:item="sampleMenuPestanas.item")
 		template(slot='tabcontent1')
 			p texto prueba item 1
 		template(slot='tabcontent2')
 			p texto prueba item 2
 		template(slot='tabcontent3')
 			p texto prueba item 3
-	MiniCard(name="Pedro")
+	MiniCard(:name="sampleMiniCard.name")

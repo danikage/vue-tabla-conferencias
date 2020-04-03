@@ -1,12 +1,12 @@
 div.menu-pestanas
 	nav.menu-pestanas__index
 		ul.menu-pestanas__list
-			li.menu-pestanas__item(@click="changeText(1)")
-				span.menu-pestanas__title item1
-			li.menu-pestanas__item(@click="changeText(2)")
-				span.menu-pestanas__title item2
-			li.menu-pestanas__item(@click="changeText(3)")
-				span.menu-pestanas__title item3
+			li.menu-pestanas__item(@click="changeText(1)"  :class="itemActive1")
+				span.menu-pestanas__title {{ item[0] }}
+			li.menu-pestanas__item(@click="changeText(2)"  :class="itemActive2")
+				span.menu-pestanas__title {{ item[1] }}
+			li.menu-pestanas__item(@click="changeText(3)"  :class="itemActive3")
+				span.menu-pestanas__title {{ item[2] }}
 	div.menu-pestanas__slots
 		.menu-pestanas__slots-block(:class="blockActive1")
 			slot(name='tabcontent1')
