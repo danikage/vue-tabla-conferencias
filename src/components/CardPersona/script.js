@@ -20,13 +20,4 @@ export default {
 			}
 		}
 	},
-	data() {
-		return {
-			rrss: []
-		}
-	},
-	computed: {
-	},
-	methods: {
-	}
 }
