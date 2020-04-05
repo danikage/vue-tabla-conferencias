@@ -32,6 +32,11 @@
 					text: 'About',
 					icon: 'info'
 				},
+				{
+					url: '/sessions',
+					text: 'Horarios',
+					icon: 'calendar_today'
+				},
 			],
 		}),
 		methods: {
