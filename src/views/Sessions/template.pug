@@ -5,8 +5,8 @@
 	p Por eso en algunas ofertas piden conocimientos de API Rest. Si los tienes, estas conversiones las haces más rápidas.
 	MenuPestanas(:item="tabsHeaders")
 		template(slot='tabcontent1')
-			TablaComponentes(:header="schedule[0].headers"  :data="schedule[0].data")
+			TablaComponentes(v-if="schedule.length"  :header="schedule[0].headers"  :data="schedule[0].data")
 		template(slot='tabcontent2')
-			TablaComponentes(:header="schedule[1].headers"  :data="schedule[1].data")
+			TablaComponentes(v-if="schedule.length"  :header="schedule[1].headers"  :data="schedule[1].data")
 		template(slot='tabcontent3')
-			TablaComponentes(:header="schedule[2].headers"  :data="schedule[2].data")
+			TablaComponentes(v-if="schedule.length"  :header="schedule[2].headers"  :data="schedule[2].data")
