@@ -27,9 +27,13 @@ export default new Vuex.Store({
 		setSpeakerDetail(state, payload){
 			state.speakerDetail = payload
 		},
+		simulateResetCall(state, payload){
+			state[payload.key] = payload.value
+		}
 	},
 	actions: {
 		async getSchedule({commit}){
+			commit('simulateResetCall',{key:'schedule', value: []})
 			dummyAxios.get('www.miweb.com/schedule')
 				.then((res) => {
 					commit('setSchedule',res)
@@ -39,6 +43,7 @@ export default new Vuex.Store({
 				})
 		},
 		async getSpeakers({commit}){
+			commit('simulateResetCall',{key:'speakers', value: []})
 			dummyAxios.get('www.miweb.com/speakers')
 				.then((res) => {
 					commit('setSpeakers',res)
@@ -48,6 +53,7 @@ export default new Vuex.Store({
 				})
 		},
 		async getSpeakerDetail({commit},speakerId){
+			commit('simulateResetCall',{key:'speakerDetail', value: {}})
 			dummyAxios.get(`www.miweb.com/speaker/detail/${speakerId}`)
 				.then((res) => {
 					commit('setSpeakerDetail',res)

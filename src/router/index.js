@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home'
 import About from '@/views/About'
 import Test from '@/views/Test'
+import Sessions from '@/views/Sessions'
 
 Vue.use(VueRouter)
 
@@ -21,7 +22,12 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
-  }
+  },
+  {
+    path: '/sessions',
+    name: 'Sessions',
+    component: Sessions
+  },
 ]
 
 const router = new VueRouter({
