@@ -3,6 +3,7 @@ import TablaComponentes from '@/components/TablaComponentes/index.vue'
 import MenuPestanas from '@/components/MenuPestanas/index.vue'
 import MiniCard from '@/components/MiniCard/index.vue'
 import CardPersona from '@/components/CardPersona/index.vue'
+import ResumenDireccion from '@/components/ResumenDireccion/index.vue'
 
 export default {
 	name: 'Test',
@@ -11,6 +12,7 @@ export default {
 		MenuPestanas,
 		MiniCard,
 		CardPersona,
+		ResumenDireccion,
 	},
 	// Props para el ejemplo 2 de las propiedades computadas:
 	// props: {
@@ -57,6 +59,10 @@ export default {
 				},
 			]
 		},
+		sampleResumenDireccion:{
+			name: 'Ifema - Recinto Ferial de Madrid',
+			address: 'Av. del Partenón, 5, 28042 Madrid'
+		}
 		// el store aquí no funciona
 		// schedule: this.$store.state.schedule,
 	}),
