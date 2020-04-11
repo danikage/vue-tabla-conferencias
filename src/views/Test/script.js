@@ -4,6 +4,7 @@ import MenuPestanas from '@/components/MenuPestanas/index.vue'
 import MiniCard from '@/components/MiniCard/index.vue'
 import CardPersona from '@/components/CardPersona/index.vue'
 import ResumenDireccion from '@/components/ResumenDireccion/index.vue'
+import Map from '@/components/Map/index.vue'
 
 export default {
 	name: 'Test',
@@ -13,14 +14,8 @@ export default {
 		MiniCard,
 		CardPersona,
 		ResumenDireccion,
+		Map,
 	},
-	// Props para el ejemplo 2 de las propiedades computadas:
-	// props: {
-	// 	metros: {
-	// 		type: Number,
-	// 		default: 0
-	// 	}
-	// },
 	data: () => ({
 		sampleTablaComponentes:{
 			header: ['title1','title2','title3'],
@@ -62,14 +57,16 @@ export default {
 		sampleResumenDireccion:{
 			name: 'Ifema - Recinto Ferial de Madrid',
 			address: 'Av. del Partenón, 5, 28042 Madrid'
-		}
-		// el store aquí no funciona
-		// schedule: this.$store.state.schedule,
+		},
+		sampleMap:{
+			mapConfig: {
+				center: {lat: 40.4674389, lng: -3.6168937},
+				zoom: 14
+			},
+			apiKey: '',
+		},
 	}),
 	computed: {
-		// Creo que no habíamos visto, las propiedades computadas
-		// las hay de dos tipos:
-		// -las que toman los valores de store o algún otro valor extraño (no me meto en cuáles)
 		schedule(){
 			return this.$store.state.schedule;
 		},
@@ -79,19 +76,10 @@ export default {
 		speakerDetail(){
 			return this.$store.state.speakerDetail;
 		},
-		// -las que modifican alguno de los datos
-		// -Por ejemplo, si se toman en las props los metros de algo, se convierten automáticamente en millas.
-		// Y así se disponen en el template de dos variables, "metros" y "millas"
-		// millas(){
-		// 		return this.metros * 0.000621371;
-		// }
 	},
 	created(){
 		this.$store.dispatch('getSchedule');
 		this.$store.dispatch('getSpeakers');
 		this.$store.dispatch('getSpeakerDetail', 'id1');
-
-		// El store aquí funciona pero no sería reactivo, que es lo que se busca siempre con vue (reactivo, es que el resultado que se imprime cambia áutomáticamente si se cambia su valor)
-		// this.schedule = this.$store.state.schedule,
 	}
 }

@@ -1,0 +1,7 @@
+div.map
+	.google-map(ref="googleMap")
+	template(v-if="Boolean(this.google) && Boolean(this.map)")
+		slot(
+			:google="google"
+			:map="map"
+		)
