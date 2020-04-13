@@ -42,6 +42,11 @@
 					text: 'Localización',
 					icon: 'location_on'
 				},
+				{
+					url: '/info',
+					text: 'Info',
+					icon: 'help_outline'
+				},
 			],
 		}),
 		methods: {

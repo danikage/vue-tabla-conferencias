@@ -5,6 +5,7 @@ import About from '@/views/About'
 import Test from '@/views/Test'
 import Sessions from '@/views/Sessions'
 import Location from '@/views/Location'
+import Info from '@/views/Info'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/location',
     name: 'Location',
     component: Location
+  },
+  {
+    path: '/info',
+    name: 'Info',
+    component: Info
   },
 ]
 
