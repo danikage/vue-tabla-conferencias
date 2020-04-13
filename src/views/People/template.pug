@@ -1,9 +1,4 @@
 .v-people
 	h1.v-people__title Listado de Ponentes
 	.v-people__ponentes
-		MiniCard(:name="speakers[0].name")
-		MiniCard(:name="speakers[1].name")
-		MiniCard(:name="speakers[2].name")
-		MiniCard(:name="speakers[3].name")
-		MiniCard(:name="speakers[4].name")
-		MiniCard(:name="speakers[5].name")
+		MiniCard(v-for="(speaker, i) in speakers"  :key="'speakers'+i"  :name="speaker.name")
