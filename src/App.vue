@@ -37,6 +37,11 @@
 					text: 'Horarios',
 					icon: 'calendar_today'
 				},
+				{
+					url: '/location',
+					text: 'Localización',
+					icon: 'location_on'
+				},
 			],
 		}),
 		methods: {
