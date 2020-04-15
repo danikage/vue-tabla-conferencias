@@ -37,6 +37,11 @@
 					text: 'Horarios',
 					icon: 'calendar_today'
 				},
+				{
+					url: '/people',
+					text: 'Ponentes',
+					icon: 'supervisor_account'
+				},
 			],
 		}),
 		methods: {
