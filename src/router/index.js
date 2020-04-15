@@ -4,6 +4,7 @@ import Home from '@/views/Home'
 import About from '@/views/About'
 import Test from '@/views/Test'
 import Sessions from '@/views/Sessions'
+import People from '@/views/People'
 import Location from '@/views/Location'
 
 Vue.use(VueRouter)
@@ -28,6 +29,11 @@ const routes = [
     path: '/sessions',
     name: 'Sessions',
     component: Sessions
+  },
+  {
+    path: '/people',
+    name: 'People',
+    component: People
   },
   {
     path: '/location',
