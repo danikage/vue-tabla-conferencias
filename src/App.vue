@@ -42,6 +42,11 @@
 					text: 'Ponentes',
 					icon: 'supervisor_account'
 				},
+				{
+					url: '/location',
+					text: 'Localización',
+					icon: 'location_on'
+				},
 			],
 		}),
 		methods: {
