@@ -5,6 +5,7 @@ import About from '@/views/About'
 import Test from '@/views/Test'
 import Sessions from '@/views/Sessions'
 import People from '@/views/People'
+import PeopleDetail from '@/views/PeopleDetail'
 import Location from '@/views/Location'
 import Info from '@/views/Info'
 
@@ -35,6 +36,11 @@ const routes = [
     path: '/people',
     name: 'People',
     component: People
+  },
+  {
+    path: '/people/:peopleId',
+    name: 'PeopleDetail',
+    component: PeopleDetail
   },
   {
     path: '/location',

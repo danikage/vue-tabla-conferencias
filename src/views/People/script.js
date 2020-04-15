@@ -16,5 +16,10 @@ export default {
 	},
 	created(){
 		this.$store.dispatch('getSpeakers');
+	},
+	methods: {
+		goto(url){
+			this.$router.push(url);
+		},
 	}
 }
