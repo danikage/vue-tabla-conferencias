@@ -1,8 +1,5 @@
 .v-sessions
-	p Como en schedule me vienen los datos de las pestañas, pero no en formato que necesito, debo hacer una conversión.
-	p La conversión la hago en el watch, cuando lo revises me avisas y  lo vemos juntos. Otra cosa que irás entendiendo cuanto más la uses.
-	p Este tipo de problemas con las conversiones pasan a menudo, pero poco a poco se aprenden a hacerlas.
-	p Por eso en algunas ofertas piden conocimientos de API Rest. Si los tienes, estas conversiones las haces más rápidas.
+	MyTitle(:title="sampleMyTitle.title")
 	MenuPestanas(:item="tabsHeaders")
 		template(slot='tabcontent1')
 			TablaComponentes(v-if="schedule.length"  :header="schedule[0].headers"  :data="schedule[0].data")

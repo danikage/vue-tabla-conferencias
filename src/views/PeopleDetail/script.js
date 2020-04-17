@@ -1,12 +1,17 @@
+import MyTitle from '@/components/MyTitle/index.vue'
 import CardPersona from '@/components/CardPersona/index.vue'
 
 export default {
 	name: 'PeopleDetail',
 	components: {
+		MyTitle,
 		CardPersona,
 	},
 	data: () => ({
 		peopleId: null,
+		sampleMyTitle:{
+			title:'Detalles del ponente',
+		},
 	}),
 	computed: {
 		speakerDetail(){
