@@ -1,13 +1,18 @@
+import MyTitle from '@/components/MyTitle/index.vue'
 import ResumenDireccion from '@/components/ResumenDireccion/index.vue'
 import Map from '@/components/Map/index.vue'
 
 export default {
 	name: 'Location',
 	components: {
+		MyTitle,
 		ResumenDireccion,
 		Map,
 	},
 	data: () => ({
+		sampleMyTitle:{
+			title:'Localización',
+		},
 		sampleAddress:{
 			name: 'Ifema - Recinto Ferial de Madrid',
 			address: 'Av. del Partenón, 5, 28042 Madrid'
