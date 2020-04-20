@@ -17,23 +17,28 @@
 		data: () => ({
 			showMenu: false,
 			links: [
+				// {
+				// 	url: '/',
+				// 	text: 'Test',
+				// 	icon: 'games'
+				// },
+				// {
+				// 	url: '/home',
+				// 	text: 'Home',
+				// 	icon: 'home'
+				// },
+				// {
+				// 	url: '/about',
+				// 	text: 'About',
+				// 	icon: 'info'
+				// },
+				// {
+				// 	url: '/sessions',
+				// 	text: 'Horarios',
+				// 	icon: 'calendar_today'
+				// },
 				{
 					url: '/',
-					text: 'Test',
-					icon: 'games'
-				},
-				{
-					url: '/home',
-					text: 'Home',
-					icon: 'home'
-				},
-				{
-					url: '/about',
-					text: 'About',
-					icon: 'info'
-				},
-				{
-					url: '/sessions',
 					text: 'Horarios',
 					icon: 'calendar_today'
 				},
