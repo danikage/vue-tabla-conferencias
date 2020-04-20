@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/views/Home'
-import About from '@/views/About'
-import Test from '@/views/Test'
+// import Home from '@/views/Home'
+// import About from '@/views/About'
+// import Test from '@/views/Test'
 import Sessions from '@/views/Sessions'
 import People from '@/views/People'
 import PeopleDetail from '@/views/PeopleDetail'
@@ -12,25 +12,29 @@ import Info from '@/views/Info'
 Vue.use(VueRouter)
 
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'Test',
+  //   component: Test
+  // },
+  // {
+  //   path: '/home',
+  //   name: 'Home',
+  //   component: Home
+  // },
+  // {
+  //   path: '/about',
+  //   name: 'About',
+  //   component: About
+  // },
   {
     path: '/',
-    name: 'Test',
-    component: Test
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
+    name: 'Sessions',
+    component: Sessions
   },
   {
     path: '/sessions',
-    name: 'Sessions',
-    component: Sessions
+    redirect: '/',
   },
   {
     path: '/people',
