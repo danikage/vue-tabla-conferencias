@@ -2,6 +2,7 @@
 	display flex
 	flex-direction column
 	padding 8.2rem 9.45rem
+	// este padding desaparece, no es necesario
 	&__index
 		align-self flex-start
 	&__item
@@ -25,7 +26,8 @@
 	&__title
 		font-family Arial
 		font-size 1.5rem
-		font-height 1rem
+		// font-height 1rem		//esto falla, no existe esta propiedad, sino la de abajo
+		line-height 1rem
 		font-weight 900
 		text-transform uppercase
 	&__slots
@@ -33,10 +35,12 @@
 		min-height 10rem
 		background-color #a6ccc7
 		padding 0 0.75rem
+		// el padding interior, va a ser el mismo en alto y ancho
 		box-shadow 0.5rem 0.5rem 1.5rem #444
 	&__slots-block
 		font-size 1rem
-		font-height 1rem
+		// font-height 1rem		//esto falla, no existe esta propiedad, sino la de abajo
+		line-height 1rem
 		color #000
 		display none
 		&--active
