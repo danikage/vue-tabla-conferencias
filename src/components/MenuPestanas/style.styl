@@ -2,41 +2,40 @@
 	display flex
 	flex-direction column
 	&__index
-		align-self flex-end
+		align-self flex-start
 	&__item
-		padding 0.8rem 2rem
-		border-radius 0.6rem 0 0 0
-		background-color #fcf7bb
+		width 13rem
+		height 3.1rem
+		text-align center
+		box-sizing border-box
+		padding 1rem 0
+		border-radius 1.5rem 1.5rem 0 0
+		background-color #e50876
 		cursor pointer
-		position relative
-		&:nth-of-type(1)
-			z-index 1
-			transform translate(0.8rem) 
+		color #fff
 		&:nth-of-type(2)
-			z-index 3
-			transform translate(0.4rem)
-			background-color #cbe2b0
+			background-color #9bd400
 		&:nth-of-type(3)
-			z-index 6
-			background-color #f19292
+			background-color #ff7300
 		&--active
-			padding-top 1.1rem
-			box-shadow 0 0 0.4rem inset #000
+			color #000
 		&:hover
-			box-shadow 0 0 0.4rem inset #000
+			color #000
 	&__title
-		font-size 1rem
-		font-height 1rem
-		font-weight 600
+		font-family Arial
+		font-size 1.5rem
+		line-height 1rem
+		font-weight 900
+		text-transform uppercase
 	&__slots
 		width 100%
 		min-height 10rem
-		background-color #fff
-		padding 1rem
+		background-color #a6ccc7
+		padding 0.75rem
+		box-shadow 0.5rem 0.5rem 1.5rem #444
 	&__slots-block
-		padding-left 0.4rem
 		font-size 1rem
-		font-height 1rem
+		line-height 1rem
 		color #000
 		display none
 		&--active

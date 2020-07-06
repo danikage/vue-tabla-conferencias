@@ -1,9 +1,10 @@
 .v-sessions
 	MyTitle(:title="sampleMyTitle.title")
-	MenuPestanas(:item="tabsHeaders")
-		template(slot='tabcontent1')
-			TablaComponentes(v-if="schedule.length"  :header="schedule[0].headers"  :data="schedule[0].data")
-		template(slot='tabcontent2')
-			TablaComponentes(v-if="schedule.length"  :header="schedule[1].headers"  :data="schedule[1].data")
-		template(slot='tabcontent3')
-			TablaComponentes(v-if="schedule.length"  :header="schedule[2].headers"  :data="schedule[2].data")
+	.container
+		MenuPestanas.my-8(:item="tabsHeaders")
+			template(slot='tabcontent1')
+				TablaComponentes(v-if="schedule.length"  :header="schedule[0].headers"  :data="schedule[0].data")
+			template(slot='tabcontent2')
+				TablaComponentes(v-if="schedule.length"  :header="schedule[1].headers"  :data="schedule[1].data")
+			template(slot='tabcontent3')
+				TablaComponentes(v-if="schedule.length"  :header="schedule[2].headers"  :data="schedule[2].data")
