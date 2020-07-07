@@ -2,7 +2,6 @@
 	#app
 		MenuNav(:links="links")
 		main
-			button(@click="clickMenu") menu
 			router-view
 </template>
 
@@ -12,59 +11,32 @@
 	export default {
 		name: 'App',
 		components: {
-			MenuNav
+			MenuNav,
 		},
 		data: () => ({
-			showMenu: false,
 			links: [
-				// {
-				// 	url: '/',
-				// 	text: 'Test',
-				// 	icon: 'games'
-				// },
-				// {
-				// 	url: '/home',
-				// 	text: 'Home',
-				// 	icon: 'home'
-				// },
-				// {
-				// 	url: '/about',
-				// 	text: 'About',
-				// 	icon: 'info'
-				// },
-				// {
-				// 	url: '/sessions',
-				// 	text: 'Horarios',
-				// 	icon: 'calendar_today'
-				// },
 				{
 					url: '/',
 					text: 'Horarios',
-					icon: 'calendar_today'
+					icon: 'icono_calendario.png'
 				},
 				{
 					url: '/people',
 					text: 'Ponentes',
-					icon: 'supervisor_account'
+					icon: 'icono_ponentes.png'
 				},
 				{
 					url: '/location',
 					text: 'Localización',
-					icon: 'location_on'
+					icon: 'icono_localizacion.png'
 				},
 				{
 					url: '/info',
-					text: 'Info',
-					icon: 'help_outline'
+					text: 'Información',
+					icon: 'icono_informacion.png'
 				},
 			],
 		}),
-		methods: {
-			clickMenu(){
-				this.showMenu = true
-				this.$store.commit('setMenuNav', this.showMenu)
-			},
-		}
 	};
 </script>
 
