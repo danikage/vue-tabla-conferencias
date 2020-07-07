@@ -1,9 +1,17 @@
-nav.menu-nav(:class="[{'menu-nav--active': showMenu}]")
-	.menu-nav__overlay(@click="hideMenu")
-		.menu-nav__content
-			ul.menu-nav__list
-				li.menu-nav__list-item(v-for="(link,index) in links"  :key="index")
-					router-link.menu-nav__link(:to="link.url")
-						span.menu-nav__icon 
-							i.material-icons {{ link.icon }}
-						span.menu-nav__text {{ link.text }}
+div.menu-nav
+	button.menu-nav__button(@click="clickMenu", :class="[{'menu-nav__button--active': showMenu}]")
+		svg.menu-nav__svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 576")
+			path.menu-nav__svg-up(d="M516.566 54.155c9.144 0 16.535 7.408 16.535 16.536v97.643c0 9.144-7.392 16.536-16.535 16.536H72.716c-9.145 0-16.536-7.392-16.536-16.536v-97.643c0-9.127 7.392-16.536 16.536-16.536h449.85z")
+			path.menu-nav__svg-middle(d="M516.566 223.155c9.144 0 16.535 7.408 16.535 16.536v97.643c0 9.144-7.392 16.535-16.535 16.535H72.716c-9.145 0-16.536-7.392-16.536-16.535v-97.643c0-9.127 7.392-16.536 16.536-16.536h449.85z")
+			path.menu-nav__svg-down(d="M516.566 390.945c9.144 0 16.535 7.408 16.535 16.536v97.643c0 9.144-7.392 16.535-16.535 16.535H72.716c-9.145 0-16.536-7.392-16.536-16.535v-97.643c0-9.128 7.392-16.536 16.536-16.536h449.85z")
+	nav.menu-nav__layout(:class="[{'menu-nav__layout--active': showMenu}]")
+		.menu-nav__overlay(@click="hideMenu")
+			.menu-nav__content
+				ul.menu-nav__list
+					li.menu-nav__list-item(v-for="(link,index) in linksFormated"  :key="index")
+						router-link.menu-nav__link(:to="link.url")
+							//- span.menu-nav__icon 
+							//- 	i.material-icons {{ link.icon }}
+							span.menu-nav__icon 
+								img(:src="link.icon")
+							span.menu-nav__text {{ link.text }}
