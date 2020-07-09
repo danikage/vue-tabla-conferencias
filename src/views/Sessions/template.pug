@@ -1,7 +1,8 @@
 .v-sessions
-	MyTitle(:title="sampleMyTitle.title")
+	.pt-7.pb-3
+		MyTitle(:title="sampleMyTitle.title")
 	.container
-		MenuPestanas.my-8(:item="tabsHeaders")
+		MenuPestanas(:item="tabsHeaders")
 			template(slot='tabcontent1')
 				TablaComponentes(v-if="schedule.length"  :header="schedule[0].headers"  :data="schedule[0].data")
 			template(slot='tabcontent2')
