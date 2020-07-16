@@ -1,7 +1,15 @@
 .v-info
-	.v-info__title
+	.pt-7.pb-1
 		MyTitle(:title="sampleMyTitle.title")
-	.v-info__dev
 		p.v-info__text Proyecto creado y desarrollado por:
-		h3.v-info__name Daniel Ugarte
-		h3.v-info__name Marcos Rodríguez
+	.pb-3
+		CardSimple(:size='md')
+			template(slot='infocontent')
+				p.card-simple__title Daniel Ugarte
+				p.card-simple__paragraph Jefe de programación.
+				p.card-simple__title Marcos Rodríguez
+				p.card-simple__paragraph Ayudante de programación.
+				p.card-simple__title Laura González
+				p.card-simple__paragraph Diseñadora gráfica.
+	.mx-8.pb-3
+		CardSimple(:size='lg')
