@@ -14,8 +14,8 @@ export default {
 			title:'Localización',
 		},
 		sampleAddress:{
-			name: 'Ifema - Recinto Ferial de Madrid',
-			address: 'Av. del Partenón, 5, 28042 Madrid'
+			name: 'Ifema - Recinto ferial de Madrid',
+			address: 'Avda. del Partenón 5, 28042 Madrid'
 		},
 		sampleMap:{
 			mapConfig: {
