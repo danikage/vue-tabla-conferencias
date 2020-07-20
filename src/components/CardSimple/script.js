@@ -5,6 +5,4 @@ export default {
 			type: String,
 		}
 	},
-	data() {
-	},
 }

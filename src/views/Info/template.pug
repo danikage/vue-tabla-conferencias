@@ -3,13 +3,62 @@
 		MyTitle(:title="sampleMyTitle.title")
 		p.v-info__text Proyecto creado y desarrollado por:
 	.pb-3
-		CardSimple(:size='md')
+		CardSimple(size='md')
 			template(slot='infocontent')
 				p.card-simple__title Daniel Ugarte
-				p.card-simple__paragraph Jefe de programación.
+				p.card-simple__paragraph Programador front-end.
 				p.card-simple__title Marcos Rodríguez
-				p.card-simple__paragraph Ayudante de programación.
+				p.card-simple__paragraph Programador junior.
 				p.card-simple__title Laura González
 				p.card-simple__paragraph Diseñadora gráfica.
 	.mx-8.pb-3
-		CardSimple(:size='lg')
+		CardSimple(size='lg')
+			template(slot='infocontent')
+				p.card-simple__title-1 Resumen y detalles del proyecto
+				hr
+				p Este proyecto se ha desarrollado para adquirir o mejorar los conocimientos de las distintas personas implicadas.
+				p Existen todavía muchas mejoras que se podrían desarrollar (como mejorar el responsive, entre otras), pero no estaba en los requisitos de este proyecto.
+				p.card-simple__title-2 Tecnologías empleadas
+				ul.card-simple__list
+					li html
+					li css
+					li js
+					li vue.js
+					li pug
+					li stylus
+					li vuex
+					li vue-router
+					li google maps
+					li trello
+					li photoshop
+				p.card-simple__title-2 Funciones realizadas o mejoradas por cada persona:
+				p.card-simple__title-3 Daniel Ugarte
+				ul.card-simple__list
+					li Mejora de los conocimientos de elaboración de tarjetas reducidas y claras para las distintas tareas de desarrollo
+					li Iniciación al sistema de estimación de tiempos
+					li Revisión y corrección de las tareas
+					li Elaboración del informe
+					li Mejora de los conocimientos sobre vue.js
+					li Coordinación de tareas tanto de trello como de git
+					li Creación de una pequeña librería para simular un servidor
+				p.card-simple__title-3 Marcos Rodríguez
+				ul.card-simple__list
+					li Aprendizaje sobre html, css, y js a nivel de desarrollo de proyecto (nivel básico pero independiente)
+					li Introducción a vue.js
+					li Inicio en la estimación de tareas
+					li Aprendizaje del sistema de control de versiones git (mediante consola de comandos)
+					li Iniciación al gitflow y al sistema de ramas
+				p.card-simple__title-3 Laura González
+				ul.card-simple__list
+					li Creación del diseño en base a un proyecto previo ya desarrollado
+					li Modifación de distintos cambios según petición de cliente
+				p.card-simple__title-2 Resumen de tiempos
+				p.card-simple__title-3 Daniel Ugarte
+				p tiempo de estimación total: --
+				p tiempo de desarrollo total: --
+				p.card-simple__title-3 Marcos Rodríguez
+				p tiempo de estimación total: --
+				p tiempo de desarrollo total: --
+				p.card-simple__title-3 Laura González
+				p tiempo de estimación total: --
+				p tiempo de desarrollo total: --
