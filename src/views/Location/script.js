@@ -25,10 +25,4 @@ export default {
 			apiKey: '',
 		},
 	}),
-	computed: {
-	},
-	watch: {
-	},
-	created(){
-	}
 }

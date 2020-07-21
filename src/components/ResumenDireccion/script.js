@@ -10,12 +10,4 @@ export default {
 			default: 'Dirección'
 		}
 	},
-	data() {
-		return {
-		}
-	},
-	computed: {
-	},
-	methods: {
-	}
 }

@@ -8,18 +8,14 @@ export default {
 			}
 		},
 	},
-	data() {
-		return {
-			blockActive1: 'menu-pestanas__slots-block--active',
-			blockActive2: '',
-			blockActive3: '',
-			itemActive1: 'menu-pestanas__item--active',
-			itemActive2: '',
-			itemActive3: ''
-		}
-	},
-	computed: {
-	},
+	data: () => ({
+		blockActive1: 'menu-pestanas__slots-block--active',
+		blockActive2: '',
+		blockActive3: '',
+		itemActive1: 'menu-pestanas__item--active',
+		itemActive2: '',
+		itemActive3: ''
+	}),
 	methods: {
 		changeText(tabClicked){
 			this.blockActive1 = '';

@@ -10,12 +10,4 @@ export default {
 			default: 'Name'
 		}
 	},
-	data() {
-		return {
-		}
-	},
-	computed: {
-	},
-	methods: {
-	}
 }

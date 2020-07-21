@@ -10,10 +10,4 @@ export default {
 			title:'Información',
 		},
 	}),
-	computed: {
-	},
-	watch: {
-	},
-	created(){
-	}
 }

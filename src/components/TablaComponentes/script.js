@@ -14,8 +14,4 @@ export default {
 			}
 		}
 	},
-	computed: {
-	},
-	methods: {
-	}
 }

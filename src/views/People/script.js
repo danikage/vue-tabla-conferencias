@@ -17,8 +17,6 @@ export default {
 			return this.$store.state.speakers;
 		},
 	},
-	watch: {
-	},
 	created(){
 		this.$store.dispatch('getSpeakers');
 	},
