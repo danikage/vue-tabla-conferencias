@@ -8,7 +8,13 @@ export default {
 		name:{
 			type: String,
 			default: 'Name'
-		}
+		},
+		gradient:{
+			type: String,
+		},
+		underline:{
+			type: String,
+		},
 	},
 	data() {
 		return {

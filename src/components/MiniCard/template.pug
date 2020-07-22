@@ -1,7 +1,6 @@
 div.mini-card(@click="$emit('minicardClicked')")
 	.mini-card__index
-		.mini-card__img-wrapper
-			img.mini-card__img(:src="img")
-		.mini-card__name-wrapper
-			p.mini-card__name {{ name }}
-
+		.mini-card__img-wrapper(:class="gradient")
+			.mini-card__img-background
+				img.mini-card__img(:src="img")
+		p.mini-card__name(:class="underline") {{ name }}
