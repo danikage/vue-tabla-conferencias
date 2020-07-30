@@ -2,4 +2,4 @@
 	.pt-7.pb-3
 		MyTitle(:title="sampleMyTitle.title")
 	.v-people__ponentes.mx-18
-		MiniCard(v-for="(speaker, i) in speakers"  :key="'speakers'+i"  :name="speaker.name"  :img="speaker.img"  :gradient="gradient"  :underline="underline" @minicardClicked="goto('/people/'+speaker.id)")
+		MiniCard(v-for="(speaker, i) in speakers"  :key="'speakers'+i"  :name="speaker.name"  :img="speaker.img"  :type="i+1" @minicardClicked="goto('/people/'+speaker.id)")

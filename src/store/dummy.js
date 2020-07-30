@@ -51,7 +51,7 @@ export const dummyAxios = {
 	],
 	speakers:{
 		id1: {
-			img: '@/assets/icono_chica.png',
+			img: 'icono_chica.png',
 			name: 'Sara Soueidan',
 			description: 'UI/ingeniera de diseño, especialista en svg',
 			rrss: [
@@ -73,7 +73,7 @@ export const dummyAxios = {
 			]
 		},
 		id2: {
-			img: '@/assets/icono_chico.png',
+			img: 'icono_chico.png',
 			name: 'Brad Frost',
 			description: 'Web designer, especialista en diseño atómico en css',
 			rrss: [
@@ -95,7 +95,7 @@ export const dummyAxios = {
 			]
 		},
 		id3: {
-			img: '@/assets/icono_chico.png',
+			img: 'icono_chico.png',
 			name: 'Hugo “Kitty” Giraudel',
 			description: 'Programador y especialista accesibilidad',
 			rrss: [
@@ -117,7 +117,7 @@ export const dummyAxios = {
 			]
 		},
 		id4: {
-			img: '@/assets/icono_chica.png',
+			img: 'icono_chica.png',
 			name: 'Jen Simmons',
 			description: 'Diseñadora y desarrolladora web. Miembro de CSS Working Group',
 			rrss: [
@@ -139,7 +139,7 @@ export const dummyAxios = {
 			]
 		},
 		id5: {
-			img: '@/assets/icono_chica.png',
+			img: 'icono_chica.png',
 			name: 'Sarah Drasner',
 			description: 'Diseñadora y programadora. Especialista en maquetaciones y ha trabajado en el desarrollo de vue',
 			rrss: [
@@ -161,7 +161,7 @@ export const dummyAxios = {
 			]
 		},
 		id6: {
-			img: '@/assets/icono_chico.png',
+			img: 'icono_chico.png',
 			name: 'Wes Bos',
 			description: 'Fullstack web, un gran programador',
 			rrss: [

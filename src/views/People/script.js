@@ -11,8 +11,6 @@ export default {
 		sampleMyTitle:{
 			title:'Listado de Ponentes',
 		},
-		gradient: 'mini-card__gradient-style1',
-		underline: 'mini-card__underline1'
 	}),
 	computed: {
 		speakers(){
