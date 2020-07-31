@@ -39,7 +39,7 @@ export default new Vuex.Store({
 					commit('setSchedule',res)
 				})
 				.catch((error) => {
-					console.log(error)
+					// console.log(error)
 				})
 		},
 		async getSpeakers({commit}){
@@ -49,7 +49,7 @@ export default new Vuex.Store({
 					commit('setSpeakers',res)
 				})
 				.catch((error) => {
-					console.log(error)
+					// console.log(error)
 				})
 		},
 		async getSpeakerDetail({commit},speakerId){
@@ -59,7 +59,7 @@ export default new Vuex.Store({
 					commit('setSpeakerDetail',res)
 				})
 				.catch((error) => {
-					console.log(error)
+					// console.log(error)
 				})
 		},
 	},
