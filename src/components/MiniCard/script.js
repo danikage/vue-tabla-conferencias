@@ -9,15 +9,9 @@ export default {
 			type: String,
 			default: 'Name'
 		},
-		type:{			// dado que el estilo será el mismo para la img como el subrayado, se puede agrupar
+		type:{
 			type: [String, Number],
 			default: '1'
-		},
-		gradient:{		// sobra
-			type: String,
-		},
-		underline:{		// sobra
-			type: String,
 		},
 	},
 	data: () => ({
@@ -29,12 +23,7 @@ export default {
 	},
 	methods:{
 		getColor(digit){
-			if(digit > 2){		// este if sobra, lo he puesto para que se puedan ver los estilos editados, borrar
-				return 'mini-card--type-2'
-			} else {			// este if sobra, lo he puesto para que se puedan ver los estilos editados, borrar
-				return 'mini-card--type-' + digit
-			}
-			// return 'mini-card--type-' + digit		// este return es el que se necesita, descomenta cuando lo veas (y borra el comentario)
+			return 'mini-card--type-' + digit
 		}
 	}
 }
