@@ -1,5 +1,6 @@
 .v-people
 	.pt-7.pb-3
 		MyTitle(:title="sampleMyTitle.title")
-	.v-people__ponentes.mx-18
-		MiniCard(v-for="(speaker, i) in speakers"  :key="'speakers'+i"  :name="speaker.name"  :img="speaker.img"  :type="i+1" @minicardClicked="goto('/people/'+speaker.id)")
+	.container.flex.pb-3
+		.v-people__ponentes
+			MiniCard.mb-3(v-for="(speaker, i) in speakers"  :key="'speakers'+i"  :name="speaker.name"  :img="speaker.img"  :type="i+1" @minicardClicked="goto('/people/'+speaker.id)")
