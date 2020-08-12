@@ -51,7 +51,7 @@ export const dummyAxios = {
 	],
 	speakers:{
 		id1: {
-			img: 'https://image.flaticon.com/icons/svg/2741/2741163.svg',
+			img: 'icono_chica.png',
 			name: 'Sara Soueidan',
 			description: 'UI/ingeniera de diseño, especialista en svg',
 			rrss: [
@@ -73,7 +73,7 @@ export const dummyAxios = {
 			]
 		},
 		id2: {
-			img: 'https://image.flaticon.com/icons/svg/2741/2741163.svg',
+			img: 'icono_chico.png',
 			name: 'Brad Frost',
 			description: 'Web designer, especialista en diseño atómico en css',
 			rrss: [
@@ -95,7 +95,7 @@ export const dummyAxios = {
 			]
 		},
 		id3: {
-			img: 'https://image.flaticon.com/icons/svg/2741/2741163.svg',
+			img: 'icono_chico.png',
 			name: 'Hugo “Kitty” Giraudel',
 			description: 'Programador y especialista accesibilidad',
 			rrss: [
@@ -117,7 +117,7 @@ export const dummyAxios = {
 			]
 		},
 		id4: {
-			img: 'https://image.flaticon.com/icons/svg/2741/2741163.svg',
+			img: 'icono_chica.png',
 			name: 'Jen Simmons',
 			description: 'Diseñadora y desarrolladora web. Miembro de CSS Working Group',
 			rrss: [
@@ -139,7 +139,7 @@ export const dummyAxios = {
 			]
 		},
 		id5: {
-			img: 'https://image.flaticon.com/icons/svg/2741/2741163.svg',
+			img: 'icono_chica.png',
 			name: 'Sarah Drasner',
 			description: 'Diseñadora y programadora. Especialista en maquetaciones y ha trabajado en el desarrollo de vue',
 			rrss: [
@@ -161,7 +161,7 @@ export const dummyAxios = {
 			]
 		},
 		id6: {
-			img: 'https://image.flaticon.com/icons/svg/2741/2741163.svg',
+			img: 'icono_chico.png',
 			name: 'Wes Bos',
 			description: 'Fullstack web, un gran programador',
 			rrss: [
@@ -220,7 +220,8 @@ export const dummyAxios = {
 		Object.keys(this.speakers).forEach((speakerId)=>{
 			list.push({
 				id: speakerId,
-				name: that.speakers[speakerId].name
+				name: that.speakers[speakerId].name,
+				img: that.speakers[speakerId].img
 			})
 		})
 		return new Promise(function(resolve, reject) {

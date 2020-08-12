@@ -1,0 +1,5 @@
+div.expansible
+	button.expansible__button(@click="toggle") {{ button }}
+	.expansible__content(:class="{ 'expansible__content--show' : show }")
+		slot
+

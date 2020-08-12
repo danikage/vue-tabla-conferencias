@@ -1,25 +1,85 @@
 .mini-card
-	width 18rem
-	margin-top 2rem
+	padding-left 3.8rem
+	padding-top 1.2rem
+	padding-bottom 1.2rem
+	width (18rem + @padding-left)
 	&__index
 		width 100%
+		height 5.5rem
 		display flex
-		justify-content space-around
-		padding 0.2rem 1rem
+		justify-content flex-end
+		align-items center
+		padding 0 2rem
+		position relative
 		background-color #fff
+		border-radius 1.5rem
+		box-shadow 0.5rem 0.5rem 1rem #222
+		cursor pointer
+		&:hover
+			background-color #727272
+			color #fff
 	&__img-wrapper
-		flex 0 1 2.5rem
-		height 2.5rem
-		border-radius 50%
+		width 6.5rem
+		height 6.5rem
+		border-radius 1.5rem
+		padding 0.8rem
+		position absolute
+		top -0.5rem
+		left -3rem
 		overflow hidden
-	&__img
+		transform rotateZ(-45deg)
+	&__img-background
 		width 100%
 		height 100%
-	&__name-wrapper
-		flex 0 1 70%
-		position relative
+		display flex
+		justify-content center
+		overflow hidden
+		align-items center
+		background-color rgba(255, 255, 255, 0.8)
+		border-radius 1rem
+	&__img
+		width 80%
+		height 100%
+		transform rotateZ(45deg)
 	&__name
+		text-align right
 		font-size 1.5rem
-		font-height 2rem
-		position absolute
-		top calc(50% - 0.844rem)
+		line-height 2rem
+		margin 0
+		text-decoration underline
+	&--type-1
+		.mini-card
+			&__name
+				text-decoration-color #005f6b
+			&__img-wrapper
+				background-image linear-gradient(#006c6e,#0395a9 50%, #005f6b 50%)
+	&--type-2
+		.mini-card
+			&__name
+				text-decoration-color #9ad400
+			&__img-wrapper
+				background-image linear-gradient(#a0dc00 ,#d4ee01 50%, #9ad400 50%)
+	&--type-3
+		.mini-card
+			&__name
+				text-decoration-color #e50876
+			&__img-wrapper
+				background-image linear-gradient(#e50876 ,#f40dba 50%, #e50876 50%)
+	&--type-4
+		.mini-card
+			&__name
+				text-decoration-color #038bff
+			&__img-wrapper
+				background-image linear-gradient(#069bff ,#06d1ff 50%, #038bff 50%)
+	&--type-5
+		.mini-card
+			&__name
+				text-decoration-color #ff7300
+			&__img-wrapper
+				background-image linear-gradient(#ff8300 ,#ffb403 50%, #ff7300 50%)
+	&--type-6
+		.mini-card
+			&__name
+				text-decoration-color #c4bf01
+			&__img-wrapper
+				background-image linear-gradient(#c6c501 ,#E6E402 50%, #c4bf01 50%)
