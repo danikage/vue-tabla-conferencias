@@ -18,6 +18,15 @@ export default {
 			default: function(){
 				return []
 			}
-		}
+		},
+		type:{
+			type: [String, Number],
+			default: '1'
+		},
 	},
+	methods:{
+		getColor(digit){
+			return 'card-persona--type-' + digit
+		}
+	}
 }
