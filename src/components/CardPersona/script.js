@@ -3,7 +3,7 @@ export default {
 	props: {
 		img:{
 			type: String,
-			default: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'
+			default: ''
 		},
 		name:{
 			type: String,
@@ -18,6 +18,22 @@ export default {
 			default: function(){
 				return []
 			}
+		},
+		type:{
+			type: [String, Number],
+			default: '1'
+		},
+	},
+	data: () => ({
+		image: '',
+		image_default: 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png',
+	}),
+	created() {
+		this.image = this.img != '' ? require('@/assets/'+this.img) : this.image_default
+	},
+	methods:{
+		getColor(digit){
+			return 'card-persona--type-' + digit
 		}
 	},
 }

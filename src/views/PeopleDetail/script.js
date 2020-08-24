@@ -17,6 +17,13 @@ export default {
 		speakerDetail(){
 			return this.$store.state.speakerDetail;
 		},
+		correctorColor(){
+			if (this.peopleId != null) {
+				return this.peopleId.slice(2)
+			}else {
+				return 1
+			}
+		}
 	},
 	created(){
 		this.peopleId = this.$route.params.peopleId;
