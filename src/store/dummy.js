@@ -57,17 +57,17 @@ export const dummyAxios = {
 			rrss: [
 				{
 					name: 'Facebook',
-					img: 'https://image.flaticon.com/icons/svg/733/733547.svg',
+					img: 'icono_facebook.png',
 					url: 'https://es-es.facebook.com/',
 				},
 				{
 					name: 'Twitter',
-					img: 'https://image.flaticon.com/icons/svg/1409/1409937.svg',
+					img: 'icono_twitter.png',
 					url: 'https://twitter.com/SaraSoueidan',
 				},
 				{
 					name: 'Web',
-					img: 'https://image.flaticon.com/icons/svg/174/174857.svg',
+					img: 'icono_linkedin.png',
 					url: 'https://www.sarasoueidan.com/',
 				},
 			]
@@ -79,17 +79,17 @@ export const dummyAxios = {
 			rrss: [
 				{
 					name: 'Facebook',
-					img: 'https://image.flaticon.com/icons/svg/733/733547.svg',
+					img: 'icono_facebook.png',
 					url: 'https://es-es.facebook.com/',
 				},
 				{
 					name: 'Twitter',
-					img: 'https://image.flaticon.com/icons/svg/1409/1409937.svg',
+					img: 'icono_twitter.png',
 					url: 'https://twitter.com/brad_frost',
 				},
 				{
 					name: 'Web',
-					img: 'https://image.flaticon.com/icons/svg/174/174857.svg',
+					img: 'icono_linkedin.png',
 					url: 'https://bradfrost.com/',
 				},
 			]
@@ -101,17 +101,17 @@ export const dummyAxios = {
 			rrss: [
 				{
 					name: 'Facebook',
-					img: 'https://image.flaticon.com/icons/svg/733/733547.svg',
+					img: 'icono_facebook.png',
 					url: 'https://es-es.facebook.com/',
 				},
 				{
 					name: 'Twitter',
-					img: 'https://image.flaticon.com/icons/svg/1409/1409937.svg',
+					img: 'icono_twitter.png',
 					url: 'https://twitter.com/HugoGiraudel',
 				},
 				{
 					name: 'Web',
-					img: 'https://image.flaticon.com/icons/svg/174/174857.svg',
+					img: 'icono_linkedin.png',
 					url: 'https://hugogiraudel.com/',
 				},
 			]
@@ -123,17 +123,17 @@ export const dummyAxios = {
 			rrss: [
 				{
 					name: 'Facebook',
-					img: 'https://image.flaticon.com/icons/svg/733/733547.svg',
+					img: 'icono_facebook.png',
 					url: 'https://es-es.facebook.com/',
 				},
 				{
 					name: 'Twitter',
-					img: 'https://image.flaticon.com/icons/svg/1409/1409937.svg',
+					img: 'icono_twitter.png',
 					url: 'https://twitter.com/jensimmons',
 				},
 				{
 					name: 'Web',
-					img: 'https://image.flaticon.com/icons/svg/174/174857.svg',
+					img: 'icono_linkedin.png',
 					url: 'https://jensimmons.com/',
 				},
 			]
@@ -145,17 +145,17 @@ export const dummyAxios = {
 			rrss: [
 				{
 					name: 'Facebook',
-					img: 'https://image.flaticon.com/icons/svg/733/733547.svg',
+					img: 'icono_facebook.png',
 					url: 'https://es-es.facebook.com/',
 				},
 				{
 					name: 'Twitter',
-					img: 'https://image.flaticon.com/icons/svg/1409/1409937.svg',
+					img: 'icono_twitter.png',
 					url: 'https://twitter.com/sarah_edo',
 				},
 				{
 					name: 'Web',
-					img: 'https://image.flaticon.com/icons/svg/174/174857.svg',
+					img: 'icono_linkedin.png',
 					url: 'https://sarah.dev/',
 				},
 			]
@@ -167,17 +167,17 @@ export const dummyAxios = {
 			rrss: [
 				{
 					name: 'Facebook',
-					img: 'https://image.flaticon.com/icons/svg/733/733547.svg',
+					img: 'icono_facebook.png',
 					url: 'https://es-es.facebook.com/',
 				},
 				{
 					name: 'Twitter',
-					img: 'https://image.flaticon.com/icons/svg/1409/1409937.svg',
+					img: 'icono_twitter.png',
 					url: 'https://twitter.com/wesbos',
 				},
 				{
 					name: 'Web',
-					img: 'https://image.flaticon.com/icons/svg/174/174857.svg',
+					img: 'icono_linkedin.png',
 					url: 'https://wesbos.com/',
 				},
 			]
