@@ -3,11 +3,11 @@ div.card-persona(:class="getColor(type)")
 		.card-persona__img-wrapper
 			.card-persona__gradient
 				.card-persona__background
-					img.card-persona__img(:src='image')
+					img.card-persona__img(:src='getImgProfile(img)')
 		.card-persona__info
 			.card-persona__text
 				p.card-persona__name {{ name }}
-				p.card-persona__description {{ description }}
+				p.card-persona__description {{ description }} 
 			.card-persona__rrss
 				a(v-for="(item, i) in rrss"  :key="'rrss'+i"  :href="item.url" target="_blank")
-					img.card-persona__rrss-item(:src="item.img"  :title="item.name")
+					img.card-persona__rrss-item(:src="getImgRrss(item.img)"  :title="item.name")
